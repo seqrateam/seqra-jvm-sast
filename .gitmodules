@@ -1,0 +1,3 @@
+[submodule "seqra-dataflow-core"]
+	path = seqra-dataflow-core
+	url = git@github.com:seqrateam/seqra-dataflow-core.git

@@ -1,0 +1,1 @@
+rootProject.name = "seqra-jvm-sast-dataflow"

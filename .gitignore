@@ -1,0 +1,5 @@
+build
+.idea
+.kotlin
+.gradle
+/config-private/*.yaml

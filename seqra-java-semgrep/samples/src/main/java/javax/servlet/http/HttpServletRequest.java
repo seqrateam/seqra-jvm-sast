@@ -21,13 +21,5 @@ public interface HttpServletRequest extends ServletRequest {
         public String getParameter(String name) {
             return "value";
         }
-
-        @Override
-        public String getHeader(String name) {
-            return "another value";
-        }
-
-        @Override
-        public HttpSession getSession() { return new HttpSession.Impl(); }
     }
 }

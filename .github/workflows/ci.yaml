@@ -7,9 +7,9 @@ on:
     branches: [ "main" ]
 
 env:
-  AUTOBUILDER_VERSION: 
-  RULES_VERSION: 
-  EXPECTED_TRACES: 13480
+  AUTOBUILDER_VERSION: 2025.08.27.6def5f5
+  RULES_VERSION: v1.0.0
+  EXPECTED_TRACES: 13091
 
 jobs:
   ci-basic:

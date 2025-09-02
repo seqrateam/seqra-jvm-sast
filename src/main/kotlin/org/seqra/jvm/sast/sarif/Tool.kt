@@ -26,12 +26,15 @@ private fun generateSarifRuleDescription(metadata: RuleMetadata): ReportingDescr
         cwes + owasps + confidence + category
     }
 
+    val shortDescription =
+        metadata.metadata!!.readStrings("shortDescription")?.firstOrNull() ?: "Seqra Finding: ${metadata.ruleId}"
+
     return ReportingDescriptor(
-        id = metadata.ruleId,
-        name = metadata.ruleId,
+        id = metadata.path,
+        name = metadata.path,
         defaultConfiguration = ReportingConfiguration(level = level),
         fullDescription = MultiformatMessageString(text = metadata.message),
-        shortDescription = MultiformatMessageString(text = "Seqra: ${metadata.ruleId}"),
+        shortDescription = MultiformatMessageString(text = shortDescription),
         help = MultiformatMessageString(text = metadata.message),
         properties = PropertyBag(tags)
     )
